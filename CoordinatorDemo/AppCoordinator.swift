@@ -20,10 +20,8 @@ class AppCoordinator: Coordinator {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let firstVC = FirstViewController(nibName: nil, bundle: nil)
-       // let firstViewController = FirstViewController()
         self.navController = UINavigationController(rootViewController: firstVC)
-   
-   
+        
     }
     
     func start() {
