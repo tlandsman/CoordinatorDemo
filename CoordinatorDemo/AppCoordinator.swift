@@ -19,9 +19,9 @@ class AppCoordinator: Coordinator {
     init() {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let firstViewController = FirstViewController()
-        self.navController = UINavigationController(rootViewController: firstViewController)
+        let firstVC = FirstViewController(nibName: nil, bundle: nil)
+       // let firstViewController = FirstViewController()
+        self.navController = UINavigationController(rootViewController: firstVC)
    
    
     }
