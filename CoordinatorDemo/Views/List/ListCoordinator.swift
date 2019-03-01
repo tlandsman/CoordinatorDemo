@@ -15,7 +15,6 @@ final class ListCoordinator: CoordinatorProtocol {
     
     init(navController: UINavigationController) {
         self.navController = navController
-       // self.listVC = ListViewController(nibName: nil, bundle: nil)
         self.listVC = ListViewController.create()
         self.listVC.viewModel = ListViewModel()
         

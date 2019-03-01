@@ -14,8 +14,11 @@ final class ListViewController: UIViewController, FactoryProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        titleLabel.text = "Hello World"
+        configureForViewModel()
+    }
+    
+    func configureForViewModel() {
+        titleLabel.text = viewModel.title
     }
 }
 

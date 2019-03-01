@@ -18,7 +18,6 @@
 		F410398A2220C18B00500725 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41039892220C18B00500725 /* ListViewController.xib */; };
 		F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */; };
 		F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D282229D90B0037FBAD /* ListViewModel.swift */; };
-		F44D0D2B2229DA980037FBAD /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */; };
 		F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		F41039892220C18B00500725 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		F44D0D282229D90B0037FBAD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				F4103986221DEEC300500725 /* CoordinatorProtocol.swift */,
-				F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */,
 				F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */,
 			);
 			path = Protocols;
@@ -311,7 +308,6 @@
 				F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */,
 				F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */,
 				F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */,
-				F44D0D2B2229DA980037FBAD /* ViewModelProtocol.swift in Sources */,
 				F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */,
 				F4103957221DE87200500725 /* AppDelegate.swift in Sources */,
 			);
