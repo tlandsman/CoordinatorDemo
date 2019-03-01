@@ -15,7 +15,6 @@ final class ListViewController: UIViewController, FactoryProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureForViewModel()
         let cellNib = UINib(nibName: "ListCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "ListCell")
     }
@@ -34,7 +33,6 @@ extension ListViewController: UITableViewDataSource {
         cell.configureForViewModel(viewModel: cellViewModel)
         return cell
     }
- 
 }
 
 extension ListViewController: UITableViewDelegate {
