@@ -10,16 +10,14 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     private var coodinator: AppCoordinator?
 
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
     
+        //Start Application Coordinator
         coodinator = AppCoordinator()
         coodinator?.start()
-        
         
         return true
     }

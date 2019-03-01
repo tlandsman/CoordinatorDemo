@@ -11,22 +11,21 @@ import UIKit
 
 // Primary Application Coordinator
 
-class AppCoordinator: Coordinator {
+final class AppCoordinator: CoordinatorProtocol {
   
-    var window: UIWindow
-    var navController: UINavigationController
+    private let window: UIWindow
+    private let rootNavController: UINavigationController
+    private let listCoordinator: ListCoordinator
     
     init() {
-        
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let firstVC = FirstViewController(nibName: nil, bundle: nil)
-        self.navController = UINavigationController(rootViewController: firstVC)
-        
+        self.rootNavController = UINavigationController()
+        self.listCoordinator = ListCoordinator(navController: self.rootNavController)
     }
     
     func start() {
-        window.rootViewController = navController
+        window.rootViewController = rootNavController
+        listCoordinator.start()
         window.makeKeyAndVisible()
     }
-    
 }

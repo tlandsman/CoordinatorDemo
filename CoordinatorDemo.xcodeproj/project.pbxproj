@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F4103957221DE87200500725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103956221DE87200500725 /* AppDelegate.swift */; };
-		F4103959221DE87200500725 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103958221DE87200500725 /* FirstViewController.swift */; };
+		F4103959221DE87200500725 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103958221DE87200500725 /* ListViewController.swift */; };
 		F410395E221DE87300500725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F410395D221DE87300500725 /* Assets.xcassets */; };
 		F4103961221DE87300500725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F410395F221DE87300500725 /* LaunchScreen.storyboard */; };
 		F410396C221DE87300500725 /* CoordinatorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F410396B221DE87300500725 /* CoordinatorDemoTests.swift */; };
 		F4103977221DE87300500725 /* CoordinatorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103976221DE87300500725 /* CoordinatorDemoUITests.swift */; };
 		F4103985221DED8C00500725 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103984221DED8C00500725 /* AppCoordinator.swift */; };
 		F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103986221DEEC300500725 /* CoordinatorProtocol.swift */; };
-		F410398A2220C18B00500725 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41039892220C18B00500725 /* FirstViewController.xib */; };
+		F410398A2220C18B00500725 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41039892220C18B00500725 /* ListViewController.xib */; };
+		F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */; };
+		F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D282229D90B0037FBAD /* ListViewModel.swift */; };
+		F44D0D2B2229DA980037FBAD /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */; };
+		F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 /* Begin PBXFileReference section */
 		F4103953221DE87200500725 /* CoordinatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4103956221DE87200500725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4103958221DE87200500725 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F4103958221DE87200500725 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F410395D221DE87300500725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4103960221DE87300500725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4103962221DE87300500725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +54,11 @@
 		F4103978221DE87300500725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4103984221DED8C00500725 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F4103986221DEEC300500725 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		F41039892220C18B00500725 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F41039892220C18B00500725 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		F44D0D282229D90B0037FBAD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +109,13 @@
 		F4103955221DE87200500725 /* CoordinatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F44D0D252229D1EF0037FBAD /* Protocols */,
 				F41039882220C16B00500725 /* Views */,
 				F4103956221DE87200500725 /* AppDelegate.swift */,
 				F410395D221DE87300500725 /* Assets.xcassets */,
 				F410395F221DE87300500725 /* LaunchScreen.storyboard */,
 				F4103962221DE87300500725 /* Info.plist */,
 				F4103984221DED8C00500725 /* AppCoordinator.swift */,
-				F4103986221DEEC300500725 /* CoordinatorProtocol.swift */,
 			);
 			path = CoordinatorDemo;
 			sourceTree = "<group>";
@@ -133,10 +141,38 @@
 		F41039882220C16B00500725 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F4103958221DE87200500725 /* FirstViewController.swift */,
-				F41039892220C18B00500725 /* FirstViewController.xib */,
+				F44D0D222229C8770037FBAD /* List */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F44D0D222229C8770037FBAD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F44D0D272229D8CD0037FBAD /* ListView */,
+				F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F44D0D252229D1EF0037FBAD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F4103986221DEEC300500725 /* CoordinatorProtocol.swift */,
+				F44D0D2A2229DA980037FBAD /* ViewModelProtocol.swift */,
+				F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F44D0D272229D8CD0037FBAD /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				F4103958221DE87200500725 /* ListViewController.swift */,
+				F41039892220C18B00500725 /* ListViewController.xib */,
+				F44D0D282229D90B0037FBAD /* ListViewModel.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4103961221DE87300500725 /* LaunchScreen.storyboard in Resources */,
-				F410398A2220C18B00500725 /* FirstViewController.xib in Resources */,
+				F410398A2220C18B00500725 /* ListViewController.xib in Resources */,
 				F410395E221DE87300500725 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +307,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4103985221DED8C00500725 /* AppCoordinator.swift in Sources */,
-				F4103959221DE87200500725 /* FirstViewController.swift in Sources */,
+				F4103959221DE87200500725 /* ListViewController.swift in Sources */,
+				F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */,
+				F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */,
 				F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */,
+				F44D0D2B2229DA980037FBAD /* ViewModelProtocol.swift in Sources */,
+				F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */,
 				F4103957221DE87200500725 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

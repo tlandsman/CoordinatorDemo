@@ -8,15 +8,14 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+final class ListViewController: UIViewController, FactoryProtocol {
     @IBOutlet weak var titleLabel: UILabel!
+    var viewModel: ListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         titleLabel.text = "Hello World"
     }
-
-
 }
 
