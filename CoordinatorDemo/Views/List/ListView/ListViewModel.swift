@@ -10,5 +10,6 @@ import Foundation
 
 final class ListViewModel {
     let title = "TitleTest"
-
+    //let list: [String] = ["one", "two"]
+    let list: [ListCellViewModel] = [ListCellViewModel(), ListCellViewModel()]
 }

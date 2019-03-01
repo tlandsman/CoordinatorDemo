@@ -19,6 +19,9 @@
 		F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */; };
 		F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D282229D90B0037FBAD /* ListViewModel.swift */; };
 		F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */; };
+		F44D0D302229F0C40037FBAD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44D0D2F2229F0C40037FBAD /* ListCell.xib */; };
+		F44D0D322229F2010037FBAD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D312229F2010037FBAD /* ListCell.swift */; };
+		F44D0D342229F22D0037FBAD /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D332229F22D0037FBAD /* ListCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		F44D0D282229D90B0037FBAD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		F44D0D2F2229F0C40037FBAD /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		F44D0D312229F2010037FBAD /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		F44D0D332229F22D0037FBAD /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +171,22 @@
 		F44D0D272229D8CD0037FBAD /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				F44D0D2E2229F0A20037FBAD /* ListCell */,
 				F4103958221DE87200500725 /* ListViewController.swift */,
 				F41039892220C18B00500725 /* ListViewController.xib */,
 				F44D0D282229D90B0037FBAD /* ListViewModel.swift */,
 			);
 			path = ListView;
+			sourceTree = "<group>";
+		};
+		F44D0D2E2229F0A20037FBAD /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				F44D0D2F2229F0C40037FBAD /* ListCell.xib */,
+				F44D0D332229F22D0037FBAD /* ListCellViewModel.swift */,
+				F44D0D312229F2010037FBAD /* ListCell.swift */,
+			);
+			path = ListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4103961221DE87300500725 /* LaunchScreen.storyboard in Resources */,
+				F44D0D302229F0C40037FBAD /* ListCell.xib in Resources */,
 				F410398A2220C18B00500725 /* ListViewController.xib in Resources */,
 				F410395E221DE87300500725 /* Assets.xcassets in Resources */,
 			);
@@ -303,11 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44D0D342229F22D0037FBAD /* ListCellViewModel.swift in Sources */,
 				F4103985221DED8C00500725 /* AppCoordinator.swift in Sources */,
 				F4103959221DE87200500725 /* ListViewController.swift in Sources */,
 				F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */,
 				F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */,
 				F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */,
+				F44D0D322229F2010037FBAD /* ListCell.swift in Sources */,
 				F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */,
 				F4103957221DE87200500725 /* AppDelegate.swift in Sources */,
 			);

@@ -9,16 +9,38 @@
 import UIKit
 
 final class ListViewController: UIViewController, FactoryProtocol {
-    @IBOutlet weak var titleLabel: UILabel!
+
     var viewModel: ListViewModel!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureForViewModel()
+        let cellNib = UINib(nibName: "ListCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "ListCell")
     }
     
     func configureForViewModel() {
-        titleLabel.text = viewModel.title
+      
     }
 }
 
+
+
+extension ListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath) as! ListCell
+        let cellViewModel = viewModel.list[indexPath.row]
+        cell.configureForViewModel(viewModel: cellViewModel)
+        return cell
+    }
+ 
+}
+
+extension ListViewController: UITableViewDelegate {
+    
+}
