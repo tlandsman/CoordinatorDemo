@@ -19,10 +19,6 @@ final class ListViewController: UIViewController, FactoryProtocol {
         let cellNib = UINib(nibName: "ListCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "ListCell")
     }
-    
-    func configureForViewModel() {
-      
-    }
 }
 
 
