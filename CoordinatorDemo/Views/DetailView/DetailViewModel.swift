@@ -1,5 +1,5 @@
 //
-//  ListCellViewModel.swift
+//  DetailViewModel.swift
 //  CoordinatorDemo
 //
 //  Created by Tanya Landsman on 3/1/19.
@@ -8,9 +8,6 @@
 
 import Foundation
 
-final class ListCellViewModel {
-    let title: String
-    init(title: String) {
-        self.title = title
-    }
+final class DetailViewModel {
+    
 }

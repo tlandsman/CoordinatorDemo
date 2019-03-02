@@ -20,8 +20,6 @@ final class ListViewController: UIViewController, FactoryProtocol {
     }
 }
 
-
-
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.list.count
@@ -36,5 +34,8 @@ extension ListViewController: UITableViewDataSource {
 }
 
 extension ListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellViewModel = viewModel.list[indexPath.row]
+        viewModel.coordinationBlock(.didSelectItem(item:cellViewModel.title))
+    }
 }

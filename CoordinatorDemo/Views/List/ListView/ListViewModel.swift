@@ -9,7 +9,13 @@
 import Foundation
 
 final class ListViewModel {
+    
+    let coordinationBlock: (CoordinationResult) -> Void
+    
     let title = "TitleTest"
-    //let list: [String] = ["one", "two"]
-    let list: [ListCellViewModel] = [ListCellViewModel(), ListCellViewModel()]
+    let list: [ListCellViewModel] = [ListCellViewModel(title: "blue fish"), ListCellViewModel(title: "red fish")]
+    
+    init(coordinationBlock: @escaping (CoordinationResult) -> Void) {
+        self.coordinationBlock = coordinationBlock
+    }
 }
