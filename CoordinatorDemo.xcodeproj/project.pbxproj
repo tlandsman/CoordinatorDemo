@@ -28,6 +28,16 @@
 		F44D0D372229FCC10037FBAD /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D362229FCC10037FBAD /* DetailViewModel.swift */; };
 		F44D0D3A2229FCDE0037FBAD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D382229FCDE0037FBAD /* DetailViewController.swift */; };
 		F44D0D3B2229FCDE0037FBAD /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44D0D392229FCDE0037FBAD /* DetailViewController.xib */; };
+		F4B11C83222B0AFC0071EBC7 /* Error++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C82222B0AFC0071EBC7 /* Error++.swift */; };
+		F4B11C85222B1AFD0071EBC7 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C84222B1AFD0071EBC7 /* NetworkManagerProtocol.swift */; };
+		F4B11C87222B1F470071EBC7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C86222B1F470071EBC7 /* NetworkManager.swift */; };
+		F4B11C8A222B23E60071EBC7 /* iTunesNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C89222B23E60071EBC7 /* iTunesNetworkRequest.swift */; };
+		F4B11C8E222B28750071EBC7 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C8D222B28750071EBC7 /* AlbumList.swift */; };
+		F4FC5634222AF96600C80110 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5633222AF96600C80110 /* NetworkRequestProtocol.swift */; };
+		F4FC5636222AF9B800C80110 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5635222AF9B800C80110 /* NetworkError.swift */; };
+		F4FC5638222AF9EB00C80110 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5637222AF9EB00C80110 /* HTTPMethod.swift */; };
+		F4FC563A222AFA8900C80110 /* DataCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5639222AFA8900C80110 /* DataCodable.swift */; };
+		F4FC563C222AFCD600C80110 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC563B222AFCD600C80110 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +89,16 @@
 		F44D0D362229FCC10037FBAD /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F44D0D382229FCDE0037FBAD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F44D0D392229FCDE0037FBAD /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		F4B11C82222B0AFC0071EBC7 /* Error++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error++.swift"; sourceTree = "<group>"; };
+		F4B11C84222B1AFD0071EBC7 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		F4B11C86222B1F470071EBC7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F4B11C89222B23E60071EBC7 /* iTunesNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesNetworkRequest.swift; sourceTree = "<group>"; };
+		F4B11C8D222B28750071EBC7 /* AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
+		F4FC5633222AF96600C80110 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		F4FC5635222AF9B800C80110 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F4FC5637222AF9EB00C80110 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F4FC5639222AFA8900C80110 /* DataCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCodable.swift; sourceTree = "<group>"; };
+		F4FC563B222AFCD600C80110 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		FBAC92B8169CB08D81AE4F32 /* Pods-CoordinatorDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-CoordinatorDemoUITests/Pods-CoordinatorDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FF4F4A54BE2172C0D1A070C9 /* Pods-CoordinatorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-CoordinatorDemoTests/Pods-CoordinatorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +141,6 @@
 				5ACA6028A15117C37E9BDC2E /* Pods-CoordinatorDemoUITests.debug.xcconfig */,
 				FBAC92B8169CB08D81AE4F32 /* Pods-CoordinatorDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +179,8 @@
 		F4103955221DE87200500725 /* CoordinatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F4B11C8C222B27C80071EBC7 /* Models */,
+				F4FC5632222AF61A00C80110 /* Networking */,
 				F44D0D252229D1EF0037FBAD /* Protocols */,
 				F41039882220C16B00500725 /* Views */,
 				F4103956221DE87200500725 /* AppDelegate.swift */,
@@ -245,6 +266,54 @@
 				F44D0D392229FCDE0037FBAD /* DetailViewController.xib */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		F4B11C81222B0ADD0071EBC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4B11C82222B0AFC0071EBC7 /* Error++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4B11C88222B22800071EBC7 /* NetworkRequests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B11C89222B23E60071EBC7 /* iTunesNetworkRequest.swift */,
+			);
+			path = NetworkRequests;
+			sourceTree = "<group>";
+		};
+		F4B11C8C222B27C80071EBC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4B11C8D222B28750071EBC7 /* AlbumList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4FC5632222AF61A00C80110 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F4B11C88222B22800071EBC7 /* NetworkRequests */,
+				F4FC5641222B071700C80110 /* BaseNetworking */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F4FC5641222B071700C80110 /* BaseNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC5639222AFA8900C80110 /* DataCodable.swift */,
+				F4B11C81222B0ADD0071EBC7 /* Extensions */,
+				F4FC5637222AF9EB00C80110 /* HTTPMethod.swift */,
+				F4FC5635222AF9B800C80110 /* NetworkError.swift */,
+				F4B11C86222B1F470071EBC7 /* NetworkManager.swift */,
+				F4B11C84222B1AFD0071EBC7 /* NetworkManagerProtocol.swift */,
+				F4FC5633222AF96600C80110 /* NetworkRequestProtocol.swift */,
+				F4FC563B222AFCD600C80110 /* Result.swift */,
+			);
+			path = BaseNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,15 +544,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B11C8A222B23E60071EBC7 /* iTunesNetworkRequest.swift in Sources */,
+				F4B11C87222B1F470071EBC7 /* NetworkManager.swift in Sources */,
 				F44D0D3A2229FCDE0037FBAD /* DetailViewController.swift in Sources */,
 				F44D0D342229F22D0037FBAD /* ListCellViewModel.swift in Sources */,
+				F4FC5638222AF9EB00C80110 /* HTTPMethod.swift in Sources */,
+				F4B11C83222B0AFC0071EBC7 /* Error++.swift in Sources */,
 				F4103985221DED8C00500725 /* AppCoordinator.swift in Sources */,
 				F4103959221DE87200500725 /* ListViewController.swift in Sources */,
 				F44D0D372229FCC10037FBAD /* DetailViewModel.swift in Sources */,
+				F4B11C8E222B28750071EBC7 /* AlbumList.swift in Sources */,
+				F4FC563C222AFCD600C80110 /* Result.swift in Sources */,
 				F44D0D2D2229DB210037FBAD /* NibInstantiable.swift in Sources */,
 				F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */,
+				F4B11C85222B1AFD0071EBC7 /* NetworkManagerProtocol.swift in Sources */,
+				F4FC563A222AFA8900C80110 /* DataCodable.swift in Sources */,
 				F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */,
+				F4FC5634222AF96600C80110 /* NetworkRequestProtocol.swift in Sources */,
 				F44D0D322229F2010037FBAD /* ListCell.swift in Sources */,
+				F4FC5636222AF9B800C80110 /* NetworkError.swift in Sources */,
 				F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */,
 				F4103957221DE87200500725 /* AppDelegate.swift in Sources */,
 			);

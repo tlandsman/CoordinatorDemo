@@ -6,6 +6,8 @@ target 'CoordinatorDemo' do
   use_frameworks!
 
   # Pods for CoordinatorDemo
+  
+  # Kingfisher used to assist with async image loading/ caching.
   pod 'Kingfisher'
 
   target 'CoordinatorDemoTests' do

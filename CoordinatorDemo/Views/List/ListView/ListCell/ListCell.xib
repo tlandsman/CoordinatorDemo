@@ -18,15 +18,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="404" height="121.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-D5-dqL">
-                        <rect key="frame" x="346" y="16" width="42" height="89.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-D5-dqL">
+                        <rect key="frame" x="286.5" y="16" width="101.5" height="89.5"/>
                         <color key="backgroundColor" red="1" green="0.1649479334" blue="0.27169504160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jrw-l9-jga">
-                        <rect key="frame" x="12" y="0.0" width="324" height="100"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Jrw-l9-jga">
+                        <rect key="frame" x="12" y="0.0" width="264.5" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="ZvE-LQ-li4"/>
                         </constraints>
