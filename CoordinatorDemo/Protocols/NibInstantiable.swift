@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-protocol FactoryProtocol {}
+protocol NibInstantiable {}
 
-extension FactoryProtocol where Self: UIViewController {
+extension NibInstantiable where Self: UIViewController {
     static func create() -> Self {
         return Self(nibName: nil, bundle: nil)
     }

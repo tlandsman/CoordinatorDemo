@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, FactoryProtocol {
+class DetailViewController: UIViewController, NibInstantiable {
     
     var viewModel: DetailViewModel!
     

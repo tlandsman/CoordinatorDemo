@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ListViewController: UIViewController, FactoryProtocol {
+final class ListViewController: UIViewController, NibInstantiable {
 
     var viewModel: ListViewModel!
     @IBOutlet weak var tableView: UITableView!

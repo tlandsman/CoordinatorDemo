@@ -18,7 +18,7 @@
 		F410398A2220C18B00500725 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41039892220C18B00500725 /* ListViewController.xib */; };
 		F44D0D242229C8AC0037FBAD /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */; };
 		F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D282229D90B0037FBAD /* ListViewModel.swift */; };
-		F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */; };
+		F44D0D2D2229DB210037FBAD /* NibInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D2C2229DB210037FBAD /* NibInstantiable.swift */; };
 		F44D0D302229F0C40037FBAD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44D0D2F2229F0C40037FBAD /* ListCell.xib */; };
 		F44D0D322229F2010037FBAD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D312229F2010037FBAD /* ListCell.swift */; };
 		F44D0D342229F22D0037FBAD /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D0D332229F22D0037FBAD /* ListCellViewModel.swift */; };
@@ -62,7 +62,7 @@
 		F41039892220C18B00500725 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		F44D0D232229C8AC0037FBAD /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		F44D0D282229D90B0037FBAD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		F44D0D2C2229DB210037FBAD /* NibInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiable.swift; sourceTree = "<group>"; };
 		F44D0D2F2229F0C40037FBAD /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		F44D0D312229F2010037FBAD /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		F44D0D332229F22D0037FBAD /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 		F4103955221DE87200500725 /* CoordinatorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F44D0D3C222A18AD0037FBAD /* Common */,
 				F44D0D252229D1EF0037FBAD /* Protocols */,
 				F41039882220C16B00500725 /* Views */,
 				F4103956221DE87200500725 /* AppDelegate.swift */,
@@ -171,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F4103986221DEEC300500725 /* CoordinatorProtocol.swift */,
-				F44D0D2C2229DB210037FBAD /* FactoryProtocol.swift */,
+				F44D0D2C2229DB210037FBAD /* NibInstantiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -205,13 +204,6 @@
 				F44D0D392229FCDE0037FBAD /* DetailViewController.xib */,
 			);
 			path = DetailView;
-			sourceTree = "<group>";
-		};
-		F44D0D3C222A18AD0037FBAD /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +344,7 @@
 				F4103985221DED8C00500725 /* AppCoordinator.swift in Sources */,
 				F4103959221DE87200500725 /* ListViewController.swift in Sources */,
 				F44D0D372229FCC10037FBAD /* DetailViewModel.swift in Sources */,
-				F44D0D2D2229DB210037FBAD /* FactoryProtocol.swift in Sources */,
+				F44D0D2D2229DB210037FBAD /* NibInstantiable.swift in Sources */,
 				F44D0D292229D90B0037FBAD /* ListViewModel.swift in Sources */,
 				F4103987221DEEC300500725 /* CoordinatorProtocol.swift in Sources */,
 				F44D0D322229F2010037FBAD /* ListCell.swift in Sources */,

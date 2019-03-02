@@ -14,18 +14,27 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="122" id="TFa-vz-LYf" customClass="ListCell" customModule="CoordinatorDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="404" height="122"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TFa-vz-LYf" id="2zK-gU-N92">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TFa-vz-LYf" id="2zK-gU-N92">
                 <rect key="frame" x="0.0" y="0.0" width="404" height="121.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-D5-dqL">
-                        <rect key="frame" x="8" y="11" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-D5-dqL">
+                        <rect key="frame" x="16" y="16.5" width="372" height="100"/>
+                        <color key="backgroundColor" red="1" green="0.1649479334" blue="0.27169504160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="4Ri-9f-y59"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gUG-D5-dqL" secondAttribute="bottom" constant="16" id="9Xa-zj-Vf1"/>
+                    <constraint firstAttribute="trailing" secondItem="gUG-D5-dqL" secondAttribute="trailing" constant="16" id="hzk-hJ-PTb"/>
+                    <constraint firstItem="gUG-D5-dqL" firstAttribute="top" secondItem="2zK-gU-N92" secondAttribute="top" constant="16" id="ug7-Ix-pki"/>
+                    <constraint firstItem="gUG-D5-dqL" firstAttribute="leading" secondItem="2zK-gU-N92" secondAttribute="leading" constant="16" id="zfH-Vr-Jie"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="titleLabel" destination="gUG-D5-dqL" id="xLS-mh-AzX"/>
