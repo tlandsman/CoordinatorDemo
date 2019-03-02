@@ -15,8 +15,8 @@ final class ListViewController: UIViewController, NibInstantiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cellNib = UINib(nibName: "ListCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "ListCell")
+        let cellNib = UINib(nibName: ListCell.identifier, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: ListCell.identifier)
     }
 }
 
@@ -26,7 +26,7 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath) as! ListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListCell.identifier, for: indexPath) as! ListCell
         let cellViewModel = viewModel.list[indexPath.row]
         cell.configureForViewModel(viewModel: cellViewModel)
         return cell
