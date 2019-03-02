@@ -9,5 +9,5 @@
 import Foundation
 
 final class DetailViewModel {
-    
+    let title = "List Detail"
 }

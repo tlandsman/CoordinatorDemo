@@ -8,14 +8,18 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
+class DetailViewController: UIViewController, FactoryProtocol {
+    
+    var viewModel: DetailViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
     }
-
-
+    
+    func configureForViewModel() {
+        self.title = viewModel.title
+    }
 
 }
