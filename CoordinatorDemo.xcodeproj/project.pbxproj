@@ -119,6 +119,7 @@
 		F4103955221DE87200500725 /* CoordinatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F44D0D3C222A18AD0037FBAD /* Common */,
 				F44D0D252229D1EF0037FBAD /* Protocols */,
 				F41039882220C16B00500725 /* Views */,
 				F4103956221DE87200500725 /* AppDelegate.swift */,
@@ -204,6 +205,13 @@
 				F44D0D392229FCDE0037FBAD /* DetailViewController.xib */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		F44D0D3C222A18AD0037FBAD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
