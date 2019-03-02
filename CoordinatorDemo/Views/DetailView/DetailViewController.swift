@@ -14,7 +14,7 @@ class DetailViewController: UIViewController, FactoryProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureForViewModel()
       
     }
     

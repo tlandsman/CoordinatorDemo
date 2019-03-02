@@ -19,9 +19,6 @@ final class ListCoordinator: CoordinatorProtocol {
     private let listVC: ListViewController
     
     init(navController: UINavigationController) {
-    
-        
-        
         self.navController = navController
         self.listVC = ListViewController.create()
         let onCoordinationResult: (CoordinationResult) -> Void = { [weak self] result in
