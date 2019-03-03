@@ -33,6 +33,7 @@
 		F4B11C87222B1F470071EBC7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C86222B1F470071EBC7 /* NetworkManager.swift */; };
 		F4B11C8A222B23E60071EBC7 /* iTunesNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C89222B23E60071EBC7 /* iTunesNetworkRequest.swift */; };
 		F4B11C8E222B28750071EBC7 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C8D222B28750071EBC7 /* AlbumList.swift */; };
+		F4B11C92222B67210071EBC7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B11C91222B67210071EBC7 /* Observable.swift */; };
 		F4FC5634222AF96600C80110 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5633222AF96600C80110 /* NetworkRequestProtocol.swift */; };
 		F4FC5636222AF9B800C80110 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5635222AF9B800C80110 /* NetworkError.swift */; };
 		F4FC5638222AF9EB00C80110 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC5637222AF9EB00C80110 /* HTTPMethod.swift */; };
@@ -94,6 +95,7 @@
 		F4B11C86222B1F470071EBC7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F4B11C89222B23E60071EBC7 /* iTunesNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesNetworkRequest.swift; sourceTree = "<group>"; };
 		F4B11C8D222B28750071EBC7 /* AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
+		F4B11C91222B67210071EBC7 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		F4FC5633222AF96600C80110 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		F4FC5635222AF9B800C80110 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F4FC5637222AF9EB00C80110 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		F4B11C8C222B27C80071EBC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F4B11C91222B67210071EBC7 /* Observable.swift */,
 				F4B11C8D222B28750071EBC7 /* AlbumList.swift */,
 			);
 			path = Models;
@@ -544,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B11C92222B67210071EBC7 /* Observable.swift in Sources */,
 				F4B11C8A222B23E60071EBC7 /* iTunesNetworkRequest.swift in Sources */,
 				F4B11C87222B1F470071EBC7 /* NetworkManager.swift in Sources */,
 				F44D0D3A2229FCDE0037FBAD /* DetailViewController.swift in Sources */,

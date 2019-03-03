@@ -17,6 +17,14 @@ final class ListViewController: UIViewController, NibInstantiable {
         super.viewDidLoad()
         let cellNib = UINib(nibName: ListCell.identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: ListCell.identifier)
+        
+        viewModel.didFetch.addObserver { (didFetch) in
+            if didFetch {
+                print("network call completed")
+            } else {
+                 print("network call not completed")
+            }
+        }
     }
 }
 

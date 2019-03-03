@@ -14,6 +14,7 @@ final class ListViewModel {
     
     let title = "TitleTest"
     let list: [ListCellViewModel] = [ListCellViewModel(title: "blue fish"), ListCellViewModel(title: "red fish")]
+    var didFetch: Observable<Bool> = Observable<Bool>(value: false)
     
     private let networkManager = NetworkManager()
     
@@ -24,7 +25,9 @@ final class ListViewModel {
     
     private func fetchList() {
         let listRequest = iTunesNetworkRequest<AlbumList>.list(term: "jack+johnson")
-        networkManager.request(listRequest) { (result) in
+        networkManager.request(listRequest) { [weak self ] (result) in
+            
+            self?.didFetch.value = true
             switch result {
             case .success(let list):
                 print("Success")
