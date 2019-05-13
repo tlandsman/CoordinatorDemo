@@ -10,7 +10,7 @@ import Foundation
 
 struct AlbumList: Codable, DataEncodable {
     let resultCount: Int
-   // let results: [Album]
+    let results: [Album]
 }
 
 struct Album: Codable, DataEncodable {

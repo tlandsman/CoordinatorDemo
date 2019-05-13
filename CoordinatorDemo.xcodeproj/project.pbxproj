@@ -159,6 +159,7 @@
 		F410394A221DE87200500725 = {
 			isa = PBXGroup;
 			children = (
+				F4B11CCD222C35F80071EBC7 /* New Group */,
 				F4103955221DE87200500725 /* CoordinatorDemo */,
 				F410396A221DE87300500725 /* CoordinatorDemoTests */,
 				F4103975221DE87300500725 /* CoordinatorDemoUITests */,
@@ -293,6 +294,13 @@
 				F4B11C8D222B28750071EBC7 /* AlbumList.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4B11CCD222C35F80071EBC7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F4FC5632222AF61A00C80110 /* Networking */ = {

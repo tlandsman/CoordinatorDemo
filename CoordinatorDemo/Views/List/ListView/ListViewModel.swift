@@ -13,8 +13,10 @@ final class ListViewModel {
     let coordinationBlock: (CoordinationResult) -> Void
     
     let title = "TitleTest"
-    let list: [ListCellViewModel] = [ListCellViewModel(title: "blue fish"), ListCellViewModel(title: "red fish")]
+    var list = Observable<[ListCellViewModel]>(value: [ListCellViewModel]())
     var didFetch: Observable<Bool> = Observable<Bool>(value: false)
+    
+    
     
     private let networkManager = NetworkManager()
     
@@ -26,11 +28,13 @@ final class ListViewModel {
     private func fetchList() {
         let listRequest = iTunesNetworkRequest<AlbumList>.list(term: "jack+johnson")
         networkManager.request(listRequest) { [weak self ] (result) in
-            
             self?.didFetch.value = true
             switch result {
             case .success(let list):
                 print("Success")
+                self?.list.value = list.results.map{
+                    ListCellViewModel(title: $0.trackName)
+                }
                 dump(list)
             case .failure:
                 //TODO: Handle failure

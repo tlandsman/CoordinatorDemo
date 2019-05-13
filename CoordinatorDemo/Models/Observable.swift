@@ -10,8 +10,9 @@ import Foundation
 
 // Observable
 //
-// Note: This class is meant as a quick substitute for a full reactive framework like RxSwift, or Reactive Cocoa.  I wanted it to keep this code sample project light weight without adding too many frameworks.  My intent here is to demonstrate how one might use observables in the context of an MVVM architecture.
-
+/* Note:
+    This class is meant as a quick substitute for a full reactive framework like RxSwift, or Reactive Cocoa.  I wanted it to keep this code sample project light weight without adding too many frameworks.  My intent here is to demonstrate how one might use observables in the context of an MVVM architecture.  This concept was taken from https://flawlessapp.io/blog/advanced-mvvm-tableview-tutorial/
+ */
 
 class Observable<T> {
     var value: T {

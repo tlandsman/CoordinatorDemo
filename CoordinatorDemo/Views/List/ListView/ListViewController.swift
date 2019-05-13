@@ -18,24 +18,20 @@ final class ListViewController: UIViewController, NibInstantiable {
         let cellNib = UINib(nibName: ListCell.identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: ListCell.identifier)
         
-        viewModel.didFetch.addObserver { (didFetch) in
-            if didFetch {
-                print("network call completed")
-            } else {
-                 print("network call not completed")
-            }
+        viewModel.list.addObserver{ [weak self] _ in
+            self?.tableView.reloadData()
         }
     }
 }
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.list.count
+        return viewModel.list.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ListCell.identifier, for: indexPath) as! ListCell
-        let cellViewModel = viewModel.list[indexPath.row]
+        let cellViewModel = viewModel.list.value[indexPath.row]
         cell.configureForViewModel(viewModel: cellViewModel)
         return cell
     }
@@ -43,7 +39,7 @@ extension ListViewController: UITableViewDataSource {
 
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cellViewModel = viewModel.list[indexPath.row]
+        let cellViewModel = viewModel.list.value[indexPath.row]
         viewModel.coordinationBlock(.didSelectItem(item:cellViewModel.title))
     }
 }
